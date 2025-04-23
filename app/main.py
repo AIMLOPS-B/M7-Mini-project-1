@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import warnings
 import os
-relative_path = './app/model/xgboost_model.pkl'
+relative_path = './model/xgboost_model.pkl'
 absolute_path = os.path.abspath(relative_path)
 model =  joblib.load(absolute_path)
 def predict_death_event(*data_):
@@ -58,4 +58,4 @@ iface = gradio.Interface(fn = predict_death_event,
                          description = description,
                          allow_flagging='never')
 
-iface.launch(share = True)
+iface.launch(share = False,server_name="0.0.0.0", server_port=7860)

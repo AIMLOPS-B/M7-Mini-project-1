@@ -11,7 +11,7 @@ COPY trained_model/xgboost_model.pkl /app/model/
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the application code into the container at /app
-COPY app/ .
+COPY app/main.py .
 # Expose the port the app runs on
 EXPOSE 7860
 # Run the application

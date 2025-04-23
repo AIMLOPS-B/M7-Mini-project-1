@@ -2,3 +2,5 @@ gradio
 joblib
 numpy
 pandas
+xgboost
+scikit-learn
