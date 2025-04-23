@@ -1,4 +1,4 @@
-from patient_predection_model import PatientPredictionModel
+from patient_survival_predection_model import PatientPredictionModel
 
 ppm = PatientPredictionModel("dataset/heart_failure_clinical_records_dataset.csv", "trained_model/xgboost_model.pkl")
 
