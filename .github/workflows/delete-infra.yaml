@@ -9,8 +9,8 @@ permissions:
 
 jobs:
   destroy-infa-with-terraform:
+
     runs-on: ubuntu-latest
-    needs: build
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
